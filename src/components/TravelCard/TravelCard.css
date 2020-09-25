@@ -1,0 +1,13 @@
+.travel-card{
+    
+}
+.travel-card h2{
+    position: absolute;
+    bottom: 0;
+    left:40px;
+}
+.travel-card button{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
