@@ -3,6 +3,7 @@ import { Navbar, Form, FormControl, Button, Nav } from 'react-bootstrap';
 import { Link,  useLocation } from 'react-router-dom';
 import './HeaderMenu.css';
 import { UserContext } from '../../App';
+import logo from '../../assets/travel-guru/logo.png';
 
 const HeaderMenu = () => {
     const location = useLocation();
@@ -11,11 +12,11 @@ const HeaderMenu = () => {
         <header>
             <Navbar>
                 <Navbar.Brand>
-                    <Link to="/">Logo Here</Link>
+                    <Link to="/"><img src={logo} alt="" width="120"/></Link>
                 </Navbar.Brand>
                 <Form inline>
                     <FormControl type="text" placeholder="Search Your Destination" className="mr-sm-2" />
-                    <Button variant="outline-success">Search</Button>
+                    <Button variant="outline-primary">Search</Button>
                 </Form>
                 <Nav className="ml-auto d-flex align-items-center nav--bar">
                     <Link to="/news">News</Link>

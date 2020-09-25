@@ -5,8 +5,7 @@ import travelData from '../../assets/travel-guru/fakeData/travelData';
 
 const CardDescription = (props) => {
     const location = useLocation();
-    console.log(props)
-    // const { name, shortDesc, desc} = props.locationData;
+    
     return (
         <div className="text-white w-75 mx-auto mt-5">
             {    

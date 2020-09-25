@@ -17,7 +17,7 @@ const TravelCard = (props) => {
                 <img src={img} alt={name} width="270"/>
                 <span>
                     <h2 className="text-uppercase text-white">{name}</h2>
-                    <button className="btn btn-secondary" onClick={handleBooking}>Visit</button>
+                    <button className="btn btn-primary px-3" onClick={handleBooking}>Visit</button>
                 </span>
             </div>
         </Col>

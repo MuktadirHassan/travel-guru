@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*, html{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+$theme-colors: (
+  "primary": #F9A51A,
+  "danger": #ff4136
+);
+$primary: #F9A51A;
+h1,h2{
+    font-family: 'Bebas Neue', cursive;
+}
+.btn-primary{
+    color: white;
+}
+
+@import "bootstrap"

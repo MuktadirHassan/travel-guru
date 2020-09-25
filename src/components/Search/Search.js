@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { useLocation } from 'react-router-dom';
 import travelData from '../../assets/travel-guru/fakeData/travelData';
 import Hotel from '../Hotel/Hotel';
+import googleMap from '../googleMap/googleMap';
 
 
 const Search = () => {
@@ -16,7 +17,7 @@ const Search = () => {
     useEffect(()=>{
         setHotel(hotelData.hotels);
     },[])
-   console.log(hotel);
+   
     return (
         <>
             <Container>
@@ -29,7 +30,7 @@ const Search = () => {
                         }
                     </Col>
                     <Col md={5}>
-
+                        <googleMap location={hotelData.name}></googleMap>
                     </Col>
                 </Row>
             </Container>
